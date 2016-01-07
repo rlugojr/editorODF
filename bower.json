@@ -1,5 +1,5 @@
 {
-  "name": "editorODF",
+  "name": "ODF Editor",
   "id": "editorODF",
   "description": "A TagSpaces extension allowing opening and editing of ODF based documents like ODT, ODP or ODS.",
   "type": "editor",
