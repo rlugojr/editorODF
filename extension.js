@@ -1,4 +1,4 @@
-/* Copyright (c) 2013 The Tagspaces Authors. All rights reserved.
+/* Copyright (c) 2013-2016 The TagSpaces Authors. All rights reserved.
  * Use of this source code is governed by a AGPL3 license that
  * can be found in the LICENSE file. */
 
@@ -7,14 +7,12 @@ define(function(require, exports, module) {
 
   console.log("Loading editorODF");
 
-  exports.id = "editorODF"; // ID should be equal to the directory name where the ext. is located
-  exports.title = "ODF Viewer/Editor";
-  exports.type = "editor";
-  exports.supportedFileTypes = ["odt", "ods"];
+  var extensionID = "editorODF"; // ID should be equal to the directory name where the ext. is located
+  var extensionSupportedFileTypes = ["odt", "ods"];
 
   var TSCORE = require("tscore");
 
-  var extensionDirectory = TSCORE.Config.getExtensionPath() + "/" + exports.id;
+  var extensionDirectory = TSCORE.Config.getExtensionPath() + "/" + extensionID;
 
   exports.init = function(filePath, elementID) {
     console.log("Initalization ODF Viewer/Editor...");
