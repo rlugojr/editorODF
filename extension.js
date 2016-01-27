@@ -5,16 +5,15 @@
 define(function(require, exports, module) {
   "use strict";
 
-  console.log("Loading editorODF");
-
   var extensionID = "editorODF"; // ID should be equal to the directory name where the ext. is located
   var extensionSupportedFileTypes = ["odt", "ods"];
 
-  var TSCORE = require("tscore");
+  console.log("Loading " + extensionID);
 
+  var TSCORE = require("tscore");
   var extensionDirectory = TSCORE.Config.getExtensionPath() + "/" + extensionID;
 
-  exports.init = function(filePath, elementID) {
+  function init(filePath, elementID) {
     console.log("Initalization ODF Viewer/Editor...");
     //filePath = "file:///"+filePath;
     //filePath = "http://www.webodf.org/demos/presentation/ohm2013.odp";
@@ -33,18 +32,26 @@ define(function(require, exports, module) {
         odfcanvas = new odf.OdfCanvas(odfelement);
         odfcanvas.load(filePath);
     });*/
-  };
+  }
 
-  exports.viewerMode = function() {
+  function viewerMode() {
+
     console.log("viewerMode not supported on this extension");
-  };
+  }
 
-  exports.setContent = function() {
+  function setContent() {
+
     console.log("setContent not supported on this extension");
-  };
+  }
 
-  exports.getContent = function() {
+  function getContent() {
+
     console.log("getContent not supported on this extension");
-  };
+  }
+
+  exports.init = init;
+  exports.getContent = getContent;
+  exports.setContent = setContent;
+  exports.viewerMode = viewerMode;
 
 });
