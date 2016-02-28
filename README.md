@@ -25,7 +25,7 @@ If you want to extend this extensions, please follow our general [extension deve
 
 ## Screenshots
 
-![Screenshot of the editorODF](http://tagspaces.org/extensions/editorHTML/editorODF-screenshot.png)
+![Screenshot of the editorODF](http://tagspaces.org/extensions/editorODF/editorODF-screenshot.png)
 
 ## License
 
