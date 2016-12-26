@@ -1,4 +1,4 @@
-ODF Viewer for TagSpaces
+# ODF Viewer for TagSpaces
 
 A TagSpaces extension allowing opening of [Open Document Format](http://en.wikipedia.org/wiki/OpenDocument) (ODF) based documents like ODT, ODP or ODS.
 
